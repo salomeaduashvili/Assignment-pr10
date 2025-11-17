@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Story+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla";
+  background-color: #e0f1e8;
+  padding: 3.2rem 1.6rem;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 2.4rem;
+  max-width: 27rem;
+}
+
+#conteiner-head {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  min-width: 100%;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #2a4144;
+  text-align: left;
+  margin-bottom: 3.2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #2a4144;
+  margin-bottom: 0.8rem;
+}
+
+span {
+  color: #0c7d69;
+}
+
+input {
+  padding: 1.2rem 2.4rem;
+  border-radius: 8px;
+  border: solid 1px #86a2a5;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#conteiner-content,
+#conteiner-mail {
+  margin-top: 2.4rem;
+}
+
+#checkboxes {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#support,
+#general {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  align-items: center;
+  border-radius: 8px;
+  border: solid 1px #86a2a5;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+}
+#radio-query {
+  width: 1.95rem;
+  height: 1.95rem;
+  opacity: 0.5;
+  background-color: #86a2a5;
+  position: relative;
+  cursor: default;
+}
+
+#conteiner-check p,
+#support p,
+#general p {
+  margin: 0;
+}
+
+#support img,
+#general img {
+  position: absolute;
+  display: none;
+}
+
+#conteiner-message {
+  margin-top: 2.4rem;
+}
+#message {
+  height: 21.6rem;
+}
+
+#conteiner-check {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+#check {
+  border: 1px solid #86a2a5;
+  width: 1.8rem;
+  height: 1.2rem;
+}
+
+#checkimg {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: none;
+}
+
+#lasterror,
+#name-error,
+#lastname-error,
+#mail-error,
+#content-error,
+#content-error,
+#message-error {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #d73c3c;
+  margin-top: 0.8rem;
+}
+
+#lasterror {
+  margin-bottom: 4rem;
+}
+
+#submit-btn {
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  height: 59px;
+  padding: 1.6rem 4rem;
+  border-radius: 8px;
+  background-color: #0c7d69;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+}
+
+#sent {
+  display: flex;
+  flex-direction: column;
+  width: 26rem;
+  height: 14rem;
+  padding: 2.4rem;
+  border-radius: 12px;
+  background-color: #2a4144;
+  display: none;
+  transform: translateY(86%);
+}
+
+#sent div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#sent-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #e0f1e8;
+  margin-bottom: 0;
+}
+
+#submit-btn:hover {
+  background-color: #09473b;
+}
+
+#submit-btn:active {
+  opacity: 0.8;
+}
+
+#support:hover,
+#general:hover,
+input:hover {
+  border: solid 1px #0c7d69;
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    padding: 12.8rem 3.9rem;
+  }
+  main {
+    padding: 4rem;
+    max-width: 72.2rem;
+  }
+
+  #conteiner-head {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.6rem;
+  }
+
+  #name,
+  #lastname {
+    width: 31.3rem;
+    height: 5.1rem;
+  }
+
+  #mail {
+    width: 64.2rem;
+    height: 5.1rem;
+  }
+  #checkboxes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #support,
+  #general {
+    width: 31.3rem;
+    gap: 1.43rem;
+    border: solid 1px #86a2a5;
+    padding: 1.2rem 2.4rem;
+    cursor: pointer;
+  }
+
+  #message {
+    width: 64.2rem;
+    height: 16.4rem;
+  }
+  #check {
+    height: 1.8rem;
+  }
+
+  #sent {
+    width: 45rem;
+    height: 10.7rem;
+    margin-left: 9.5rem;
+    margin-right: 9.5rem;
+    transform: translateY(5%);
+  }
+}
+@media screen and (min-width: 90rem) {
+  body {
+    padding: 12.8rem 35.2rem;
+  }
+}
