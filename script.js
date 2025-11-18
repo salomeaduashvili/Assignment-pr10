@@ -81,5 +81,8 @@ submit.addEventListener("click", () => {
   } else {
     const messageSent = document.getElementById("sent");
     messageSent.style.display = "block";
+    setTimeout(() => {
+      location.reload();
+    }, 4000);
   }
 });
